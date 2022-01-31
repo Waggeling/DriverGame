@@ -1,0 +1,20 @@
+body {
+	font-size: 1.0em;
+	background-color: #c4e1ff;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#btnRestart {
+	height: 30px;
+}
+
+#btnLeft {
+	display: none;
+}
+
+#btnRight {
+	display: none;
+}

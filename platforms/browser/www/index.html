@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<link href="css/index.css" rel="stylesheet">
+    	<title>Driver Game</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+		<meta name="author" content="Marina Hornung">
+		<meta name="description" content="A Driver Game Web-App.">
+		<script src="js/main.js"></script>
+		<script src="js/Environment.js"></script>
+		<script src="js/Cabrio.js"></script>
+		<script src="js/Barrier.js"></script>
+    </head>
+    <body onload="selectFittingCSS()">
+        <script type="text/javascript" src="cordova.js"></script>
+        <header>
+        	<h1>Driver Game</h1>
+		</header>
+		
+		<section>
+			<header>
+				<i id="bestScore">Best Score:</i>
+				<div id="bestDiv"></div><br>
+				<i id="score">Your Score:</i>
+				<div id="scoreDiv"></div>
+			</header>
+			<br>
+			<article>
+				<canvas id='canvas'>
+				Sorry, your browser doesn't support Canvas. Get Chrome!
+				</canvas>
+				<img src='img/cabrio.jpg' id='cabrio'>
+				<img src='img/road.jpg' id='road'>
+			</article>
+			<br>
+			<input type="button" onclick="leftClick()" id="btnLeft" style="color: black" value="Left"></input>
+			<input type="button" onclick="drawGame()" id="btnRestart" style="width: 100px" value="Restart!"></input>
+			<input type="button" onclick="rightClick()" id="btnRight" style="color: black" value="Right"></input>
+		</section>
+    </body>
+</html>
